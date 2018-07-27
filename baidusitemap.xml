@@ -4,6 +4,51 @@
 
     
   <url>
+    <loc>https://hzh.pub//posts/2018-07-28-passion-fruit-honey-tea.html</loc>
+    <lastmod>2018-07-27T18:59:44.279Z</lastmod>
+    <data>
+        <display>
+        <title>百香果蜂蜜茶</title>
+        <pubTime>2018-07-27T18:18:53.000Z</pubTime>
+        
+        <tag>美食</tag>
+         
+        <tag>生活</tag>
+         
+         
+           
+             
+              <breadCrumb title="美食" url="https://hzh.pub/categories/%E7%BE%8E%E9%A3%9F/"/>
+          
+             
+              <breadCrumb title="生活" url="https://hzh.pub/categories/%E7%BE%8E%E9%A3%9F/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://hzh.pub//posts/2017-07-21-listful-thinking.html</loc>
+    <lastmod>2018-07-27T16:56:58.733Z</lastmod>
+    <data>
+        <display>
+        <title>效率提升第一步 - 清单</title>
+        <pubTime>2017-07-21T14:06:22.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+         
+           
+             
+              <breadCrumb title="读书笔记" url="https://hzh.pub/categories/Reading-Notes/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://hzh.pub//posts/2018-07-22-enjoy-blogging.html</loc>
     <lastmod>2018-07-22T06:52:55.687Z</lastmod>
     <data>
@@ -59,26 +104,6 @@
            
              
               <breadCrumb title="笔记" url="https://hzh.pub/categories/Notes/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://hzh.pub//posts/2017-07-21-listful-thinking.html</loc>
-    <lastmod>2018-07-22T06:52:55.687Z</lastmod>
-    <data>
-        <display>
-        <title>效率提升第一步 - 清单</title>
-        <pubTime>2017-07-21T14:06:22.000Z</pubTime>
-        
-        <tag>读书</tag>
-         
-         
-           
-             
-              <breadCrumb title="读书笔记" url="https://hzh.pub/categories/Reading-Notes/"/>
           
         </display>
     </data>
