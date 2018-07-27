@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="正如之前所说的那样，清单可以：  使目标更清晰、具体； 可以帮助我们将清单上的事项按轻重缓急排优先级，合理分配时间与精力； 让我们可以更专心地做事，提高效率； 在完成一项又一项的待办事项中获得成就感； 可以清晰地看到各待办事项的进度，减轻焦虑； 有效地将目标转化为行动。  近两三个月以来，有了清单的帮助，工作和生活中的“临近截止日才发现许多重要、紧急的事情都还没开始做”这种情况现已大为减少。 为了">
+<meta name="keywords" content="笔记,清单,待办矩阵">
+<meta property="og:type" content="article">
+<meta property="og:title" content="待办矩阵">
+<meta property="og:url" content="https://hzh.pub/posts/2018-07-19-to-do-matrix.html">
+<meta property="og:site_name" content="行摄走读">
+<meta property="og:description" content="正如之前所说的那样，清单可以：  使目标更清晰、具体； 可以帮助我们将清单上的事项按轻重缓急排优先级，合理分配时间与精力； 让我们可以更专心地做事，提高效率； 在完成一项又一项的待办事项中获得成就感； 可以清晰地看到各待办事项的进度，减轻焦虑； 有效地将目标转化为行动。  近两三个月以来，有了清单的帮助，工作和生活中的“临近截止日才发现许多重要、紧急的事情都还没开始做”这种情况现已大为减少。 为了">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://cdn.huangzenghao.cn/hzh.pub/20180719/003643520.png-hzh.optimized">
+<meta property="og:updated_time" content="2018-07-22T06:52:55.687Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="待办矩阵">
+<meta name="twitter:description" content="正如之前所说的那样，清单可以：  使目标更清晰、具体； 可以帮助我们将清单上的事项按轻重缓急排优先级，合理分配时间与精力； 让我们可以更专心地做事，提高效率； 在完成一项又一项的待办事项中获得成就感； 可以清晰地看到各待办事项的进度，减轻焦虑； 有效地将目标转化为行动。  近两三个月以来，有了清单的帮助，工作和生活中的“临近截止日才发现许多重要、紧急的事情都还没开始做”这种情况现已大为减少。 为了">
+<meta name="twitter:image" content="https://cdn.huangzenghao.cn/hzh.pub/20180719/003643520.png-hzh.optimized">
+
+
+
+
+
+
+  <link rel="canonical" href="https://hzh.pub/posts/2018-07-19-to-do-matrix.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>待办矩阵 | 行摄走读</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56022167-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-56022167-3');
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1cd7b354281dd03e47d1b7d1f1fbbf6b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">行摄走读</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">学习、记录与交流</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://hzh.pub/posts/2018-07-19-to-do-matrix.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Huang Zenghao">
+      <meta itemprop="description" content="一个记录自己的”所见、所闻、所学、所思及所得“的个人独立博客">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="行摄走读">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">待办矩阵
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-07-19 01:18:20" itemprop="dateCreated datePublished" datetime="2018-07-19T01:18:20+08:00">2018-07-19</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Notes/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/2018-07-19-to-do-matrix.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/2018-07-19-to-do-matrix.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>正如之前所说的那样，清单可以：</p>
+<ul>
+<li>使目标更清晰、具体；</li>
+<li>可以帮助我们将清单上的事项按轻重缓急排优先级，合理分配时间与精力；</li>
+<li>让我们可以更专心地做事，提高效率；</li>
+<li>在完成一项又一项的待办事项中获得成就感；</li>
+<li>可以清晰地看到各待办事项的进度，减轻焦虑；</li>
+<li>有效地将目标转化为行动。</li>
+</ul>
+<p>近两三个月以来，有了清单的帮助，工作和生活中的<strong>“临近截止日才发现许多重要、紧急的事情都还没开始做”</strong>这种情况现已大为减少。</p>
+<p>为了能更合理地对待办事项作出适当的安排且防止遗漏，我们需要事无巨细地将其列出来，但如果事项繁多，我们便需要借助某些工具来将清单上的事项按轻重缓急排优先级，以便更合理地分配时间与精力。</p>
+<p>待办矩阵，便是我们处理这个问题的好工具。</p>
+<p><img src="https://cdn.huangzenghao.cn/hzh.pub/20180719/003643520.png-hzh.optimized" alt="待办矩阵"></p>
+<p>所谓待办矩阵，也称象限清单或四象限工作法，它是指将待办事项按紧急程度和重要程度划分为以下四类：</p>
+<ol>
+<li>重要且紧急：需要立即去做的事项；</li>
+<li>重要但不紧急：可列入计划，按计划进行的事项；</li>
+<li>紧急但不重要：时间不允许的情况下，可以推迟或取消的事项；</li>
+<li>不紧急且不重要：可做可不做，应尽量取消的事项。</li>
+</ol>
+<p>我们应当尽量确保前两类<strong>重要事项</strong>的完成，视紧急程度，确定是安排当天或最近一两天内完成，还是列入周计划或月计划中，在截止日前完成。</p>
+<p>如果“重要且紧急”事项积聚过多，或未能按时完成，将可能对我们形成压力，甚至引发焦虑，而对“重要但不紧急”事项如果不能作出适当的安排，又将在临近截止日时转化为“重要且紧急”事项。</p>
+<p>也就是说，重要程度决定该事项是否非做不可，而紧急程度则决定该事项应于何时去做。</p>
+<p>我已经在今天的<strong>待办事项</strong>清单中添加了第一个项目：将新同事的社保调入公司。我将在回到办公室之后，首先完成这项任务。</p>
+<p>明天，即周五，便是本月社保调入的截止日，逾期没有调入，不但需要准备一堆材料（还得提前做好账并装订好凭证）到社保局申请补缴，更为严重的是，这种补缴的情况，不属于连续参保，将影响当事人买房买车及子女入学！很明显，它属于重要且紧急的事项，且预计执行的时间很短，一般情况下，几分钟应能完成，若条件具备（即资料齐全），我应当在列出这个事项时，便立即将它完成。</p>
+<p>而像对账和领购发票这类事项，我们计划在月底前完成，以免影响开票和收款，这时，它们便属于重要但不紧急事项，我们只须在三五天内完成即可。但如果我们没有按计划在未来三五天内完成，临近月底时，它们又将转化为重要且紧急事项，同时还存在由于客户未能及时回复导致无法按时对账和收款，或是由于系统问题无法在月底前申领发票导致发票无法按时开具的风险。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Huang Zenghao</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://hzh.pub/posts/2018-07-19-to-do-matrix.html" title="待办矩阵">https://hzh.pub/posts/2018-07-19-to-do-matrix.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 署名 4.0 国际 (CC BY 4.0) 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+            <a href="/tags/清单/" rel="tag"># 清单</a>
+          
+            <a href="/tags/待办矩阵/" rel="tag"># 待办矩阵</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/2018-07-18-listful-life.html" rel="next" title="清单生活">
+                <i class="fa fa-chevron-left"></i> 清单生活
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/2018-07-21-tea-with-milk-and-honey.html" rel="prev" title="洋槐蜂蜜奶茶">
+                洋槐蜂蜜奶茶 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Huang Zenghao</p>
+              <p class="site-description motion-element" itemprop="description">一个记录自己的”所见、所闻、所学、所思及所得“的个人独立博客</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Huang Zenghao</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Pisces</a> v6.3.0</div>
+
+
+
+  <div class="footer-custom">Hosted by <a href="https://pages.coding.me" >Coding Pages</a> and  <a href="https://pages.github.com">GitHub Pages</a></div>
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'AJMb4LCOyVzn4kdAf3mOStLF-gzGzoHsz',
+        appKey: 'xCUHPSdvBRn2N1KJJF9Ac3ji',
+        placeholder: '在此输入评论内容',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: 
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
